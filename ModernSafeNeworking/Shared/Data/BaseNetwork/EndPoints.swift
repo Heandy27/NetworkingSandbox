@@ -6,14 +6,15 @@
 //
 import Foundation
 
-enum EndPoints: String {
-    case login = "/api/auth/login"
+struct Endoints <T: Decodable> {
+    var url: URL
+    var type: T.Type
+}
 
-    case register = "/api/auth/register"
-    case fetchMe = "/api/users/me"
-    case heroes = "/api/heroes"
-    case heroesWithRelations = "/api/heroes/relations"
-    
-    case addFavorite = "/api/favorites"
+extension Endoints where T == [News] {
+    static let headlines = Endoints(url: URL(string: "\(ConstantsApp.CONS_API_URL)headlines.json")!, type: [News].self)
+}
 
+extension Endoints where T == [Message] {
+    static let messages = Endoints(url: URL(string: "\(ConstantsApp.CONS_API_URL)messages.json")!, type: [Message].self)
 }
