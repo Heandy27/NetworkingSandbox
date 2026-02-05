@@ -7,11 +7,15 @@
 
 import SwiftUI
 
+
+
+
 struct ContentView: View {
     
     @State private var headlines = [News]()
     @State private var messages = [Message]()
-    let networkManager = NetworkManager()
+   
+    @Environment(\.networkManager) var networkManager
     
     var body: some View {
         List {
@@ -39,14 +43,10 @@ struct ContentView: View {
         }
         .task {
             do {
+                headlines = try await networkManager.fetch(.headlines)
                 
-                let headlineData = try await networkManager.fetch(.headlines)
-                
-                let messageData = try await networkManager.fetch(.messages)
-                
-                headlines = try JSONDecoder().decode([News].self, from: headlineData)
-                
-                messages = try JSONDecoder().decode([Message].self, from: messageData)
+                messages = try await networkManager.fetch(.messages)
+            
             } catch {
                 print("Error handling is a smart move!")
             }

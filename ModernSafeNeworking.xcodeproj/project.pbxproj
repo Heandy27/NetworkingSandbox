@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4907D92F3538A900C4314B /* NetworkManagerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4907D82F3538A900C4314B /* NetworkManagerKey.swift */; };
 		BFB548B12F33FF5A00659DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB548AD2F33FF5A00659DE4 /* Assets.xcassets */; };
 		BFB548B22F33FF5A00659DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548AE2F33FF5A00659DE4 /* ContentView.swift */; };
 		BFB548B32F33FF5A00659DE4 /* ModernSafeNeworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548AF2F33FF5A00659DE4 /* ModernSafeNeworkingApp.swift */; };
@@ -15,11 +16,12 @@
 		BFB548C82F3401DF00659DE4 /* HttpResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548C72F3401DB00659DE4 /* HttpResponseCodes.swift */; };
 		BFB548CC2F34036300659DE4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548CB2F34036000659DE4 /* News.swift */; };
 		BFB548CE2F3403A000659DE4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548CD2F34039E00659DE4 /* Message.swift */; };
-		BFB548D02F3407C900659DE4 /* ConstantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548CF2F3407C500659DE4 /* ConstantsApp.swift */; };
+		BFB548D02F3407C900659DE4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548CF2F3407C500659DE4 /* AppEnvironment.swift */; };
 		BFB548D22F34089200659DE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB548D12F34088D00659DE4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF4907D82F3538A900C4314B /* NetworkManagerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerKey.swift; sourceTree = "<group>"; };
 		BFB5489F2F33FF4200659DE4 /* ModernSafeNeworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernSafeNeworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB548AD2F33FF5A00659DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB548AE2F33FF5A00659DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		BFB548C72F3401DB00659DE4 /* HttpResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponseCodes.swift; sourceTree = "<group>"; };
 		BFB548CB2F34036000659DE4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		BFB548CD2F34039E00659DE4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		BFB548CF2F3407C500659DE4 /* ConstantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsApp.swift; sourceTree = "<group>"; };
+		BFB548CF2F3407C500659DE4 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		BFB548D12F34088D00659DE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 		BFB548B82F33FF8F00659DE4 /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				BF4907D82F3538A900C4314B /* NetworkManagerKey.swift */,
 				BFB548D12F34088D00659DE4 /* NetworkManager.swift */,
 				BFB548C72F3401DB00659DE4 /* HttpResponseCodes.swift */,
 				BFB548C52F3401D500659DE4 /* HttpMethods.swift */,
@@ -150,7 +153,7 @@
 		BFB548BC2F33FFBC00659DE4 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				BFB548CF2F3407C500659DE4 /* ConstantsApp.swift */,
+				BFB548CF2F3407C500659DE4 /* AppEnvironment.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -273,8 +276,9 @@
 				BFB548CC2F34036300659DE4 /* News.swift in Sources */,
 				BFB548C62F3401D900659DE4 /* HttpMethods.swift in Sources */,
 				BFB548B22F33FF5A00659DE4 /* ContentView.swift in Sources */,
-				BFB548D02F3407C900659DE4 /* ConstantsApp.swift in Sources */,
+				BFB548D02F3407C900659DE4 /* AppEnvironment.swift in Sources */,
 				BFB548C42F3401D100659DE4 /* EndPoints.swift in Sources */,
+				BF4907D92F3538A900C4314B /* NetworkManagerKey.swift in Sources */,
 				BFB548C82F3401DF00659DE4 /* HttpResponseCodes.swift in Sources */,
 				BFB548B32F33FF5A00659DE4 /* ModernSafeNeworkingApp.swift in Sources */,
 				BFB548CE2F3403A000659DE4 /* Message.swift in Sources */,

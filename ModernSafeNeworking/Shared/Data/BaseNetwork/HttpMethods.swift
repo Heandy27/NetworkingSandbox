@@ -7,11 +7,11 @@
 import Foundation
 
 /// HttpMethods
-struct HttpMethods {
-    static let post = "POST"
-    static let get = "GET"
-    static let put = "PUT"
-    static let delete = "DELETE"
-    static let content = "application/json"
-    static let contentTypeID = "Content-Type"
+enum HTTPMethod: String {
+    case delete, get, patch, post, put
+    
+    var rawValue: String {
+        String(describing: self).uppercased()
+    }
+    
 }
