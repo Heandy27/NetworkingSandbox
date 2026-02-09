@@ -47,6 +47,8 @@ struct ContentView: View {
                 
                 messages = try await networkManager.fetch(.messages)
             
+                let city = try await networkManager.fetch(.city)
+                print(city)
             } catch {
                 print("Error handling is a smart move!")
             }
